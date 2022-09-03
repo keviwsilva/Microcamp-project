@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login/login.css">
+</head>
+<body>
+  <div class="login">
+    <div class="riot">
+      <img src="img/rito Gomes.jpg" alt="" />
+      <div class="name">
+        <h2>RITO </h2>
+        <h2>GOMES</h2>
+     </div>
+    </div>
+    <form action="/auth" method="post">
+        <h1 class="register">LOGIN</h1>
+        <input 
+        type="text" 
+        name="email" 
+        placeholder="email" 
+        id="email" 
+        required/>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          id="password"
+          required
+        />
+        <input type="submit" value="Login" class="submit"/>
+      </form>
+    <a href="http://localhost:5500/cadastro">Não possui cadastro?</a>
+    <a href="http://localhost:5500/recsenha1">esqueceu a senha</a>
+   </div>
+   <div class="background">
+    <!-- <img src="img/background.jpg" alt="background image"/> -->
+   </div>
+</body>
+</html>

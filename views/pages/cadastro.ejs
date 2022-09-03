@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/cadastro/register.css">
+</head>
+<body>
+  <div class="login">
+    <div class="riot">
+      <img src="img/rito Gomes.jpg" alt="" />
+      <div class="name">
+        <h2>RITO </h2>
+        <h2>GOMES</h2>
+     </div>
+    </div>
+    <form action="/register" method="post">
+      <div class="register">
+        <h1 class="register">Cadastro</h1>
+        <input
+          type="text"
+          name="name"
+          placeholder="Nome"
+          class="register-input"
+          maxlength="12"
+          required
+        />
+        <input
+          type="date"
+          name="birthday"
+          placeholder="Data de Nascimento"
+          class="register-input"
+          required
+        />
+        <input
+          type="tel"
+          name="wpp"
+          placeholder="Whatssapp"
+          class="register-input"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="email"
+          class="register-input"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="senha"
+          class="register-input"
+          required
+        />
+        <input type="submit" class="submit" value="Registrar-se" onclick="register()" />
+      </div>
+    </form>
+    <a href="http://localhost:5500/login">Já possuo cadastro</a>
+   </div>
+   <div class="background">
+    <!-- <img src="img/background.jpg" alt="background image"/> -->
+   </div>
+</body>
+</html>

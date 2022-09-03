@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../css/cadastro/register.css">
+</head>
+<body>
+  <div class="login">
+    <div class="riot">
+      <div class="name1">
+        <h1>
+        Altere aqui suas Informações <%= usuario.name %></h1>
+     </div>
+    </div>
+    <form action="/alterwpp" method="post">
+        <li>
+            Este é o seu Whatsapp <%= usuario.wpp %>
+        </li>
+        <input type="tel" name="wpp" placeholder="Whatssapp" class="register-input" required />
+        <input type="submit" class="submit" value="alterar" />
+    </form>
+
+    <form action="/alterpassword" method="post">
+        <li>senha</li>
+        <input type="password" name="password" placeholder="Senha" class="register-input" required />
+        <input type="submit" class="submit" value="alterar" />
+    </form>
+   
+   </div>
+   <div class="background">
+   </div>
+</body>
+</html>

@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:ital@0;1&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+
+body{
+
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 200px ;
+    grid-template-rows: 62px  auto;
+    grid-template-areas: ' menu-nav menu-nav'
+    'start-content friends-aside';
+    font-family: 'PT Serif', serif;
+    background-image: url(../img/IMG/backgroud.jpg);
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+ul{
+
+    list-style: none;
+
+}
+
+
+.menu-nav{
+
+    background-color: rgba(1,10,19,.7333333333333333);
+    grid-area: menu-nav;
+    height: 62px;
+    display: flex;
+    border-bottom:solid;
+    border-width: 1px;
+    border-color: #C0C0C0;
+    z-index: 2;
+    
+
+
+}
+
+.menu-nav ul{
+
+    color: white;
+
+}
+
+
+.menu-nav .button-play-wrapper{
+
+    position: relative;
+    top:0;
+    left: 0 ;
+    opacity: 0.7;
+    
+}
+.menu-nav .button-play-wrapper:hover{
+
+    opacity: 2;
+   
+}
+
+
+.menu-nav .play-button-shape{
+
+    position: relative;
+    top: 7px;
+    left: 10px;
+    height: 40px;
+    
+
+}
+
+.menu-nav .play-button-click-area{
+
+    position: absolute;
+    top: 10px;
+    left: 32px;
+    height: 40px;
+
+}
+
+.menu-nav .play-button-text{
+
+    position: absolute;
+    top: 19px;
+    left: 79px;
+    font-size: 20px;
+
+}
+
+
+.menu-nav img{
+
+    height: 30px ;
+    padding-top: 10px ;
+    padding-left: 10px;
+
+}
+
+.menu-nav .botoes{
+
+    position: absolute;
+    top: 22px;
+    left: 160px;
+
+}
+
+.menu-nav .botoes a:hover{
+
+    color: #eed8a2b6;
+    background-image: linear-gradient(360deg, #dbd9d44d, rgba(1, 10, 19, 0));
+    
+}
+
+
+.menu-nav .botoes2 a:hover{
+
+    background-image: linear-gradient(360deg, #dbd9d44d, rgba(1, 10, 19, 0));
+
+}
+
+
+.menu-nav .botoes2{
+
+    position: absolute;
+    top: 10px;
+    right: 300px;
+}
+.menu-nav a{
+
+    padding: 8px;
+
+}
+
+.menu-nav .botoes a{
+
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-family: 'PT Serif', serif;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.menu-nav .money{
+
+    position: absolute;
+    top: 6px;
+    right: 220px;
+    height: 37px;
+
+}
+.menu-nav .money img{
+
+    height: 21px;
+
+}
+
+.menu-nav .money a{
+
+    font-size: 12px;
+
+}
+
+.menu-nav .avatar{
+
+    position: absolute;
+    top: 0px;
+    right: 130px;
+
+
+
+}
+
+
+ .avatar .avatar-xp {
+
+    position: absolute;
+    top: 0px;
+    right: 27px;
+    height: 59px;
+
+ }
+
+ .avatar .level{
+
+    position: absolute;
+    top: 46px;
+    right: 43px;
+    font-size: 8px;
+
+ }
+
+.menu-nav .name-status{
+
+    position: absolute;
+    top: 18px;
+    right: 50px;
+
+
+}
+
+.name-status .nickname{
+
+    font-size: 20px;
+    right: 10px;
+
+
+}
+
+.perfil{
+    background-color: rgba(1, 10, 19, 0.352);
+}
+
+.name-status .status{
+
+    font-size: 10px;
+    color: greenyellow;
+
+}
+
+.start-content{
+
+    background-color: #000300ca;
+    grid-area: start-content;
+    list-style: none;
+}
+
+.start-content .modo-partida{
+
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    z-index: 2;
+
+}
+
+.modo-partida .sr-img{
+
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    height: 50px;
+
+}
+
+.modo-partida .ranked{
+
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    color: white;
+    width: 200px;
+
+}
+
+.modo-partida .draft{
+
+    position: absolute;
+    top: 15px;
+    left: 260px;
+    color: white;
+
+}
+
+.modo-partida .summoners{
+
+    position: absolute;
+    top: 15px;
+    left: 340px;
+    width: 300px;
+    color: rgba(255, 255, 255, 0.438);
+
+}
+
+
+.invite-friend{
+
+    color: #e4dbc8;
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    border-radius: 50%;
+    background-color:  #333;
+    border: 2px solid #aa9261;
+    opacity: 0.5;
+    cursor: pointer;
+
+
+}
+
+.invite-friend:hover{
+
+    opacity: 2;
+
+}
+
+.start-content .first-banner{
+
+    position: absolute;
+    top: 1px;
+    left: 4%;
+    z-index: 1;
+
+}
+.first-banner img{
+
+    height: 600px;
+
+}
+.first-banner .invite-friend{
+
+    position: absolute;
+    top: 400px;
+    left: 26.5%;
+
+}
+.start-content .second-banner{
+
+    position: absolute;
+    top: 1px;
+    left: 20%;
+    z-index: 1;
+
+}
+.second-banner img{
+
+    height: 650px;
+
+}
+
+.second-banner .invite-friend{
+
+    position: absolute;
+    top: 440px;
+    left: 27.5%;
+
+}
+
+
+.start-content .player-banner{
+
+    position: absolute;
+    top: 1px;
+    left: 39%;
+    z-index: 1;
+
+}
+
+
+.start-content .border-play{
+
+    position: absolute;
+    top: 250px;
+    left: 0%;
+    height: 250px;
+    
+
+}
+
+.player-banner .level-banner{
+
+    position: absolute;
+    top: 434px;
+    left: 111px;
+    color: white;
+
+
+}
+
+.name-banner span{
+    font-size:20px;
+}
+
+.name-banner img{
+
+    position: absolute;
+    top: 180px;
+    left: 43%;
+    z-index: 2;
+    height: 37px;
+
+}
+
+
+.name-banner span{
+
+    position: absolute;
+    top: 180px;
+    left: 45%;
+    color: whitesmoke;
+    opacity: 0.7;
+    z-index: 2;
+
+}
+
+.player-banner .botao{
+
+    position: absolute;
+    top: 500px;
+    left: 26.5%;
+    opacity: 0.5;
+
+
+}
+
+.player-banner .botao:hover{
+
+    opacity: 1;
+
+}
+
+
+.start-content .forth-banner{
+
+    position: absolute;
+    top: 1px;
+    left: 59%;
+    z-index: 1;
+
+}
+.forth-banner img{
+
+    height: 650px;
+
+}
+
+.forth-banner .invite-friend{
+
+    position: absolute;
+    top: 440px;
+    left: 27.5%;
+
+}
+
+
+.start-content .fiveth-banner{
+
+    position: absolute;
+    top: 1px;
+    left: 75.5%;
+    z-index: 1;
+
+}
+.fiveth-banner img{
+
+    height: 600px;
+
+}
+
+.fiveth-banner .invite-friend{
+
+    position: absolute;
+    top: 400px;
+    left: 27.5%;
+
+}
+
+.start-content .play-button {
+
+    position: absolute;
+    bottom: 20px;
+    left: 39%;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+
+.play-button .cancel-button{
+
+    position: absolute;
+    left: 1px;
+    bottom: 7px;
+    opacity: 0.7k;
+
+}
+
+.play-button .cancel-button:hover{
+
+    opacity: 1;
+
+}
+
+
+.play-button .game-play-button{
+
+    position: absolute;
+    left: 35px;
+    bottom: 7px;
+    opacity: 0.7;
+
+}
+
+
+.play-button .game-play-button:hover{
+
+    opacity: 1;
+
+}
+
+.play-button .game-play-text{
+
+    position: absolute;
+    left: 103px;
+    color: white;
+    font-size: 25px;
+    bottom: 21px;
+
+}
+
+
+
+.friends-aside{
+
+    grid-area: friends-aside;
+    background-color: rgba(1, 10, 19, 0.85);
+    width: 200px;
+    height: 100vh;
+    z-index: 2;
+
+}
+
+.options-friends { 
+    color: #C0C0C0;
+    background-color: rgba(1, 10, 19, 0.915);
+    display: flex;
+}
+
+.social{
+    margin-top: 5px;
+    margin-left: 1px;
+}
+.icons{
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+.options-friends span:hover{
+    color: #f1eaea;
+    cursor: pointer;
+}
+
+.resolution{
+    height: max-content;
+    width: max-content;
+    background-color: black;
+}
+
+
+
+.friends-aside .friends li{
+    height: 60px;
+}
+
+.friends li {
+    margin-bottom: 5px;
+}
+.friends li span{
+    margin-bottom: 0
+}
+
+.friends .friend{
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 7px;
+    color: #7e7564;
+}
+
+.friends .status1,.status2,.status3,.status4{
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 26px;
+}
+
+
+
+
+.friends .status1{
+    color: aqua;
+}
+
+.friends .status2{
+    color: greenyellow;
+}
+
+.friends .status3{
+    color: rgba(255, 0, 0, 0.575);
+}
+
+.friends .status4{
+    color: #39352d;
+}
+
+.friends-aside .friends li:hover{
+    background-color: #aa92612b;
+    cursor: pointer;
+}
+
+
+

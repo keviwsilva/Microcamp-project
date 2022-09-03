@@ -1,0 +1,121 @@
+*{
+    margin: 0 0 0 0;
+}
+body{
+    display: grid;
+    grid-template-columns: 325px auto;
+    grid-template-areas: 'login background';
+}
+
+.login{
+    
+    margin-top: 50%;
+     margin-left: 20px; 
+     list-style: none;
+}
+
+.login1{
+    margin-top: 100%;
+    margin-left: 30px;
+}
+
+.riot{
+    display: flex;
+    flex-direction: row;
+    /* height: 70px; */
+}
+
+
+.riot .name{
+    display: flex;
+    flex-direction: column;
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.riot .name1{
+    color: black;
+    margin-left: -70px;
+}
+.riot .name2{
+    color: black;
+    margin-bottom: 50px;
+}
+
+.login form{
+    margin-top: 50%;
+}
+
+.login .register{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+}
+
+.login h1{
+    margin-left: 20%;
+}
+
+.login img {
+    height: 60px;
+    margin: 0 0 0 55px;
+}
+
+.login #email{
+    border-radius: 5px;
+    border: rgba(0, 0, 0, 0.1) solid;
+    height: 30px;
+    width: 260px;
+}
+
+#email:hover{
+    border:  rgba(0, 0, 0, 0.4) solid;
+}
+
+.login #password{
+    margin-top: 10px;
+    border-radius: 5px;
+    border: rgba(0, 0, 0, 0.1) solid;
+    height: 30px;
+    width: 260px;
+}
+
+#password:hover{
+    border:  rgba(0, 0, 0, 0.4) solid;
+}
+
+.login .submit{
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-bottom: 10px;
+}
+
+.login .submit:hover{
+    background-color: rgba(0, 0, 0, 0.52);
+    
+}
+
+.login input{
+    margin-top: 10px;
+    border-radius: 5px;
+    border: rgba(0, 0, 0, 0.1) solid;
+    height: 30px;
+    width: 260px;
+}
+
+.login a{
+    margin-left: 22%;
+}
+
+.background {
+    
+    height: 100vh;
+    background-image: url('../../img/IMG/backgroudalter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
